@@ -21,22 +21,22 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 </head>
-<body>
-    <div class="container-fluid">
-        <header>        
+<body>     
+    <div class="container-fluid">        
+        <header id="home">        
             <nav class="menu">
                 <label for="show-menu" class="show-menu">Menu</label>
                 <input type="checkbox" id="show-menu" role="button">
                 <ul id="menu-bar">
-                    <li><a href="#">INICIO</a></li>
-                    <li><a href="#">COMUNIDAD</a></li>
+                    <li><a href="#home">INICIO</a></li>
+                    <li><a href="#theme-1">COMUNIDAD</a></li>
                     <li><a href="#">MYPES</a></li>
                     <li><a href="#">ECOLOGIA</a></li>                    
                     <li>
                         <a href="#">ACERCA &#65516;</a>
                         <ul class="hidden-menu">
-                            <li><a href="#">Quienes Somos</a></li>
-                            <li><a href="#">Que Hacemos</a></li>
+                            <li><a href="#about-1">Quienes Somos</a></li>
+                            <li><a href="#about-2">Que Hacemos</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -46,16 +46,219 @@
             </div>            
         </header>     
         <div class="main-content">
-            <section class="theme"><div id="row-1" class="opaque rounded">Comunidad</div></section>
-            <section class="theme"><div id="row-2" class="opaque rounded">MYPES</div></section>
-            <section class="theme"><div id="row-3" class="opaque rounded">Ecologia</div></section>
-        </div>   
+            <section class="theme">
+                <div id="row-1" class="opaque-row-1 rounded home-thumb">
+                    <div id="col-1" class="no-opaque-row-1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <h1>Opcion 1</h1>
+                        <img src="http://dummyimage.com/180x90/000/919191.jpg" alt="Opcion 1" class="img-rounded">
+                        <p>
+                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">10</span>
+                            &nbsp;
+                            <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">5</span>
+                        </p>
+                    </div>
+                    <div id="col-2" class="no-opaque-row-1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <h1>Opcion 2</h1>
+                        <img src="http://dummyimage.com/180x90/000/919191.jpg" alt="Opcion 2" class="img-rounded">
+                        <p>
+                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">11</span>
+                            &nbsp;
+                            <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">15</span>
+                        </p>
+                    </div>
+                    <div id="col-3" class="no-opaque-row-1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <h1>Opcion 3</h1>
+                        <img src="http://dummyimage.com/180x90/000/919191.jpg" alt="Opcion 3" class="img-rounded">
+                        <p>
+                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">18</span>
+                            &nbsp;
+                            <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">9</span>
+                        </p>
+                    </div>
+                    <div id="col-4" class="no-opaque-row-1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <p>
+                            <button type="button" class="btn btn-primary btn-lg btn-danger" data-toggle="modal" data-target="#myModal">Participa!</button>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="theme">
+                <div id="row-2" class="opaque-row-2 rounded home-thumb">
+                    <div id="col-1" class="no-opaque-row-1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <h1>Opcion 1</h1>
+                        <img src="http://dummyimage.com/180x90/000/919191.jpg" alt="Opcion 1" class="img-rounded">
+                        <p>
+                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">10</span>
+                            &nbsp;
+                            <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">5</span>
+                        </p>
+                    </div>
+                    <div id="col-2" class="no-opaque-row-1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <h1>Opcion 2</h1>
+                        <img src="http://dummyimage.com/180x90/000/919191.jpg" alt="Opcion 2" class="img-rounded">
+                        <p>
+                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">11</span>
+                            &nbsp;
+                            <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">15</span>
+                        </p>
+                    </div>
+                    <div id="col-3" class="no-opaque-row-1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <h1>Opcion 3</h1>
+                        <img src="http://dummyimage.com/180x90/000/919191.jpg" alt="Opcion 3" class="img-rounded">
+                        <p>
+                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">18</span>
+                            &nbsp;
+                            <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">9</span>
+                        </p>
+                    </div>
+                    <div id="col-4" class="no-opaque-row-1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <p>
+                            <button type="button" class="btn btn-primary btn-lg btn-danger" data-toggle="modal" data-target="#myModal">Participa!</button>
+                        </p>
+                    </div>        
+                </div>
+            </section>
+            <section class="theme">
+                <div id="row-3" class="opaque-row-3 rounded home-thumb">
+                    <div id="col-1" class="no-opaque-row-1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <h1>Opcion 1</h1>
+                        <img src="http://dummyimage.com/180x90/000/919191.jpg" alt="Opcion 1" class="img-rounded">
+                        <p>
+                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">10</span>
+                            &nbsp;
+                            <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">5</span>
+                        </p>
+                    </div>
+                    <div id="col-2" class="no-opaque-row-1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <h1>Opcion 2</h1>
+                        <img src="http://dummyimage.com/180x90/000/919191.jpg" alt="Opcion 2" class="img-rounded">
+                        <p>
+                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">11</span>
+                            &nbsp;
+                            <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">15</span>
+                        </p>
+                    </div>
+                    <div id="col-3" class="no-opaque-row-1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <h1>Opcion 3</h1>
+                        <img src="http://dummyimage.com/180x90/000/919191.jpg" alt="Opcion 3" class="img-rounded">
+                        <p>
+                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">18</span>
+                            &nbsp;
+                            <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">9</span>
+                        </p>
+                    </div>
+                    <div id="col-4" class="no-opaque-row-1 col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <p>
+                            <button type="button" class="btn btn-primary btn-lg btn-danger" data-toggle="modal" data-target="#myModal">Participa!</button>
+                        </p>
+                    </div>           
+                </div>
+            </section>
+            <!-- Begin theme-1 --> 
+            <div id="theme-1" class="theme-1 opaque-row-1 rounded">            
+                <div id="row-th-1" class="col-theme col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <article>
+                        <h1>Opcion Uno</h1>
+                        <img src="http://dummyimage.com/240x120/000/919191.jpg" alt="Opcion Uno">
+                        <div class="center-me">
+                            <p>
+                                <a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">18</span></a>
+                                &nbsp;
+                                <a href="#"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">9</span></a>
+                            </p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tristique dui velit, in dictum magna finibus in. Praesent aliquam magna libero, luctus volutpat massa ultricies vitae. Praesent fermentum tristique pellentesque. Curabitur sed tortor pretium, dictum ligula eu, luctus dui. Donec ullamcorper, sem eu ultricies dapibus, massa elit mollis ante, non pellentesque eros libero in sem.</p>
+                    </article>
+                </div>                
+                <div id="row-th-2" class="col-theme col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <article>
+                        <h1>Opcion Dos</h1>
+                        <img src="http://dummyimage.com/240x120/000/919191.jpg" alt="Opcion Dos">
+                        <div class="center-me">
+                            <p>
+                                <a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">18</span></a>
+                                &nbsp;
+                                <a href="#"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">9</span></a>
+                            </p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tristique dui velit, in dictum magna finibus in. Praesent aliquam magna libero, luctus volutpat massa ultricies vitae. Praesent fermentum tristique pellentesque. Curabitur sed tortor pretium, dictum ligula eu, luctus dui. Donec ullamcorper, sem eu ultricies dapibus, massa elit mollis ante, non pellentesque eros libero in sem.</p>
+                    </article>
+                </div>             
+                <div id="row-th-3" class="col-theme col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <article>
+                        <h1>Opcion Tres</h1>
+                        <img src="http://dummyimage.com/240x120/000/919191.jpg" alt="Opcion Tres">
+                        <div class="center-me">
+                            <p>
+                                <a href="#"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">18</span></a>
+                                &nbsp;
+                                <a href="#"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true">9</span></a>
+                            </p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tristique dui velit, in dictum magna finibus in. Praesent aliquam magna libero, luctus volutpat massa ultricies vitae. Praesent fermentum tristique pellentesque. Curabitur sed tortor pretium, dictum ligula eu, luctus dui. Donec ullamcorper, sem eu ultricies dapibus, massa elit mollis ante, non pellentesque eros libero in sem.</p>
+                    </article>
+                </div>             
+            </div> <!-- End theme-1 -->    
+            <!-- Begin about-1 --> 
+            <div id="about-1" >            
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">QUIENES SOMOS</h3>
+                    </div>
+                    <div class="panel-body left-me">
+                        <div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <img src="images/profile-rap.jpg" class="img-circle responsive profile" alt="Rafael A. Portillo">
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <img src="images/profile-rap.jpg" class="img-circle responsive profile" alt="Rafael A. Portillo">
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <img src="images/profile-rap.jpg" class="img-circle responsive profile" alt="Rafael A. Portillo">                        
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div> <!-- End about-1 -->    
+            <!-- Begin about-2 --> 
+            <div id="about-2" >            
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">QUE HACEMOS</h3>
+                    </div>
+                    <div class="panel-body left-me">
+                        <h1 class="well well-lg"><strong>Proyecto:</strong></h1>
+                        <hr>
+                        <p>Esto nace como parte de un proyecto del Curso de Diseño Web Adaptativo impartido por la Universidad Don Bosco.  Parte de la tarea consiste en elaborar un sitio web, y buscamos algo pudiera cumplir con la tarea pero además fuera funcional y quedara a disposición de la comunidad web.</p>
+                    </div>
+                </div>                
+            </div> <!-- End about-2 -->    
+        </div> <!-- Main-Content -->     
+        <a href="#home" id="fixedbutton"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span><br>Inicio</a>
     </div>
-
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+            <h4 class="modal-title" id="myModalLabel">Participa!!!</h4>
+          </div>
+          <div class="modal-body">
+            <p>Aqui el Formulario</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Guardar Cambios</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-1.11.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>	
 </body>
 </html>
+
 
